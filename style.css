@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: blueviolet;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px 10px 0px;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 25px;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+h3{
+    padding: 0px 20px 20px 20px;
+}
+
+.imagem {
+    padding: 10px 0px;
+    width: 250px;
+    border-radius: 30px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    margin: 0px 5px;
+}
+li:hover{
+    background-color: white;
+    color: black;
+    transition: 300ms;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    text-align: justify;
+    padding: 0px 20px;
+}
+
+button{
+    padding: 10px 150px;
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+
+.projetos{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.projeto-git{
+    width: 400px;
+    border-radius: 30px;
+    background-color: black;
+    padding-bottom: 20px;
+}
+
+.projeto-git img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+footer p{
+    text-align: center;
+    padding: 50px;
+    color: white;
+    background-color: black;
+}
+
+
+@media only screen and (max-width: 700px) {
+   .projetos{
+       justify-content: center;
+   }
+   
+}
+@media only screen and (min-width: 100px) {
+    .projetos{
+        justify-content: center;
+    }
+    .projeto-git{
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+     }
+ }
+@media only screen and (min-width: 920px) {
+    .projetos{
+        justify-content: space-around;
+    }
+ }
+
